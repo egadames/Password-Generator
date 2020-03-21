@@ -1,37 +1,74 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Random Numbers</title>
-  </head>
-  <body>
-    <script type="text/javascript">
+<html lang="en">
 
-	var character = ['ABCDEFGHIJKLMNOPQRSTUVWXYZ', 'abcdefghijklmnopqrstuvwxyz', '0123456789', '!"#$%&\'()*+,-./:;<=>?@^[\\]^_`{|}~'];
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    var upper = confirm("Upper");
-    var lower = confirm("lower");
-    var num = confirm("num");
-	var special = confirm("special");
-	var list = "";
-	var size = prompt("how many times")
-	var password = "";
+<body>
+  <div class="wrapper">
+    <header>
+      <h1>Password Generator</h1>
+    </header>
+    <div class="card">
+      <div class="card-header">
+        <h2>Generate a Password</h2>
+      </div>
+      <div class="card-body">
+        <textarea readonly id="password" placeholder="Your Secure Password" aria-label="Generated Password"></textarea>
+      </div>
 
-	var all = [upper,lower,num,special]
-	
-	for (var i = 0; i < character.length; i++) {
-		if (all[i] === true) {
-			list = list + character[i];
-		}
-	}
-		
-	for (var i = 0; i < size; i++) {
-		var character = Math.floor((Math.random() * list.length) + 1);
-		password += list.charAt(character);
-	  }
+      <div class="card-footer">
+        <span>
+          <input type="checkbox" id="upper" name="interest" value="upper">
+          <label for="upper">Uppercase</label>
+        </span>
 
-	alert(password)
+        <span>
+          <input type="checkbox" id="special" name="interest" value="special">
+          <label for="special">Special</label>
+        </span>
 
-    </script>
-  </body>
+        <span>
+          <button id="generate" class="btn">Generate Password</button>
+        </span>
+
+        <span>
+          <input type="checkbox" id="lower" name="interest" value="lower">
+          <label for="lower">Lowercase</label>
+        </span>
+
+        <span>
+          <input type="checkbox" id="number" name="interest" value="number">
+          <label for="number">Number</label>
+        </span>
+
+       </div>
+
+       
+<!-- 
+      <div class="card-footer">
+
+
+      </div> -->
+
+    </div>
+  </div>
+  <script src="attempts.js"></script>
+</body>
+
 </html>
+
+
+<div>
+  <h4>Current count: <span id="count">0</span></h4>
+  <div class="container">
+    <button id="decrement">Decrement</button>
+    <button id="increment">Increment</button>
+  </div>
+
+</div>
