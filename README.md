@@ -1,48 +1,40 @@
-# 03 JavaScript: Password Generator
+# Project Title
 
-Create an application that generates a random password based on user-selected criteria. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
+Homework 3 - Password Generator by Erik Adames
 
-If you are unfamiliar with special characters, take a look at [some examples](https://www.owasp.org/index.php/Password_special_characters).
+## Location of URLs
 
-## User Story
+This is the link to the github repo:
 
-```
-AS AN employee with access to sensitive data
-I WANT to randomly generate a password that meets certain criteria
-SO THAT I can create a strong password that provides greater security
-```
+https://github.com/egadames/hw3
 
-## Acceptance Criteria
+This is the link to the live website:
 
-```
-GIVEN I need a new, secure password
-WHEN I click the button to generate a password
-THEN I am presented with a series of prompts for password criteria
-WHEN prompted for password criteria
-THEN I select which criteria to include in the password
-WHEN prompted for the length of the password
-THEN I choose a length of at least 8 characters and no more than 128 characters
-WHEN prompted for character types to include in the password
-THEN I choose lowercase, uppercase, numeric, and/or special characters
-WHEN I answer each prompt
-THEN my input should be validated and at least one character type should be selected
-WHEN all prompts are answered
-THEN a password is generated that matches the selected criteria
-WHEN the password is generated
-THEN the password is either displayed in an alert or written to the page
-```
+https://egadames.github.io/hw3/
 
-The following image demonstrates the application functionality:
+### Description
 
-![password generator demo](./Assets/03-javascript-homework-demo.png)
+- The app is a website that will generate a password between 8-128 characters.
 
-## Review
+- The generator has buttons for the user to decide what needs to added into the password.
 
-You are required to submit the following for review:
+- there is a prompt that ask the size of the password and does not allow it be too short or too long.
 
-* The URL of the deployed application.
+### Technologies
 
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+- The website uses HTML, CSS and Javascript.
 
-- - -
-© 2019 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.
+### Challenges
+
+- This website was very interesting to make and it was something I enjoyed.
+
+- The most difficult issue were trying to incorporate the event listeners. I was able to do to develop the logic quickly and make a 
+standard version that used prompts to get the required information. The incorporating of the checkbox was difficult but with the tutor's help and reading Mozilla guides I was able to make it function correctly.
+
+- By the end I was able to get a decent understanding of use the event listeners and how to incorporate them in the HTML and Javascript.
+
+- My best method of learning was the the help of the tutor and trial and error. I would read on how to add features to HTML and Javascript that i wanted on the generator. I would attempt to add them but often it would not quite work propertly so with the help of the tutor it would get sorted. I repeated until the password generator was completed.
+
+### Screenshot
+
+![password generator demo](./Assets/Img/screenSht.jpg)
