@@ -4,7 +4,7 @@ var specialCheckbox = document.querySelector('input[value="special"]');
 var lowerCheckbox = document.querySelector('input[value="lower"]');
 var numberCheckbox = document.querySelector('input[value="number"]');
 var generateBtn = document.querySelector("#generate");
-var list = "";
+
 
 // Write password to the #password input
   function writePassword() {
@@ -14,6 +14,7 @@ var list = "";
 }
 
 function getlist(){
+  var list = "";
     if(upperCheckbox.checked) {
       list += 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
     }
