@@ -37,4 +37,4 @@ standard version that used prompts to get the required information. The incorpor
 
 ### Screenshot
 
-![password generator demo](./Assets/Img/screenSht.jpg)
+![password generator demo](./Assets/Img/screenShot.jpg)
